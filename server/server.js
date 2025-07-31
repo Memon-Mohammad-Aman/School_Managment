@@ -11,6 +11,9 @@ const teacherRoutes = require('./routes/teachers');
 const classRoutes = require('./routes/class');
 const authRoutes = require('./routes/auth');
 const adminRoutes = require('./routes/admin');
+const submissionRoutes = require('./routes/assignmentSubmission');
+const timetableRoutes = require('./routes/timetable');
+
 // ✅ include timetable
 
 dotenv.config();
@@ -31,6 +34,9 @@ app.use('/api/attendance', attendanceRoutes);
 app.use('/api/assignment', assignmentRoutes);
 app.use('/api/student', studentRoutes);
 app.use('/api/teacher', teacherRoutes);
+app.use('/api/submission', submissionRoutes);
+app.use('/api/timetable', timetableRoutes);
+
  // ✅ timetable route
 
 const PORT = process.env.PORT || 5000;
