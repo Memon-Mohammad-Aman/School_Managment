@@ -13,6 +13,10 @@ const authRoutes = require('./routes/auth');
 const adminRoutes = require('./routes/admin');
 const submissionRoutes = require('./routes/assignmentSubmission');
 const timetableRoutes = require('./routes/timetable');
+const exams = require('./routes/exams');
+const announcementRoutes = require('./routes/announcementRoutes');
+
+
 
 // ✅ include timetable
 
@@ -36,6 +40,8 @@ app.use('/api/student', studentRoutes);
 app.use('/api/teacher', teacherRoutes);
 app.use('/api/submission', submissionRoutes);
 app.use('/api/timetable', timetableRoutes);
+app.use('/api/exams', exams);
+app.use('/api/announcements', announcementRoutes);
 
  // ✅ timetable route
 
