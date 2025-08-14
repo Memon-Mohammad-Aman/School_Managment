@@ -15,6 +15,9 @@ const submissionRoutes = require('./routes/assignmentSubmission');
 const timetableRoutes = require('./routes/timetable');
 const exams = require('./routes/exams');
 const announcementRoutes = require('./routes/announcementRoutes');
+const feeRoutes = require('./routes/feeRoutes');
+const leave = require("./routes/leave");
+
 
 
 
@@ -42,6 +45,8 @@ app.use('/api/submission', submissionRoutes);
 app.use('/api/timetable', timetableRoutes);
 app.use('/api/exams', exams);
 app.use('/api/announcements', announcementRoutes);
+app.use('/api/fees', feeRoutes);
+app.use("/api/leave", leave);
 
  // ✅ timetable route
 

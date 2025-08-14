@@ -28,4 +28,8 @@ router.get("/assigned-class", authMiddleware, async (req, res) => {
   }
 });
 
+// Get all students
+
+
+
 module.exports = router;
